@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.calc {
+    background-color: #0b0a26;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    gap: 25px 25px;
+    padding: 50px 150px;
+    font-family: Arial, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    border: 6px solid #f4e983;
+}
+
+.screen { grid-area: 1 / 1 / 2 / 6; }
+.T7 { grid-area: 2 / 1 / 3 / 2; }
+.T8 { grid-area: 2 / 2 / 3 / 3; }
+.T9 { grid-area: 2 / 3 / 3 / 4; }
+.Tplus { grid-area: 2 / 4 / 3 / 5; }
+.T6 { grid-area: 3 / 1 / 4 / 2; }
+.T5 { grid-area: 3 / 2 / 4 / 3; }
+.T4 { grid-area: 3 / 3 / 4 / 4; }
+.Tmoins { grid-area: 3 / 4 / 4 / 5; }
+.T3 { grid-area: 4 / 1 / 5 / 2; }
+.T2 { grid-area: 4 / 2 / 5 / 3; }
+.T1 { grid-area: 4 / 3 / 5 / 4; }
+.Tmult { grid-area: 4 / 4 / 5 / 5; }
+.T0 { grid-area: 5 / 1 / 6 / 2; }
+.Tdot { grid-area: 5 / 2 / 6 / 3; }
+.Tequal { grid-area: 4 / 5 / 6 / 6; }
+.Tdiv { grid-area: 5 / 4 / 6 / 5; }
+.Terase { grid-area: 2 / 5 / 3 / 6; }
+.Tclear { grid-area: 3 / 5 / 4 / 6; }
+.Tpercent { grid-area: 5 / 3 / 6 / 4; }
+.Tplus { grid-area: 2 / 4 / 3 / 5; }
+.numbers { grid-area: 2 / 1 / 5 / 4; }
+.operators { grid-area: 2 / 4 / 6 / 5; }
+.utilities { grid-area: 2 / 5 / 5 / 6; }
+
+.calc div:not(.screen) {
+    background-color: #484f57;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-box-shadow: inset -4px -5px 1px 0 #656565;
+    -webkit-box-shadow: inset -4px -5px 1px 0 #656565;
+    -o-box-shadow: inset -4px -5px 1px 0 #656565;
+    box-shadow: inset -4px -5px 1px 0 #656565;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.calc div:not(.screen):active {
+    transition: 0.1s;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+.screen {
+    background-color: #b8bab5;
+    color: #3b3e37;
+    font-family: Impact, sans-serif;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 60px;
+    -moz-box-shadow: inset 4px 4px 3px 0 #656565;
+    -webkit-box-shadow: inset 4px 4px 3px 0 #656565;
+    -o-box-shadow: inset 4px 4px 3px 0 #656565;
+    box-shadow: inset 4px 4px 3px 0 #656565;
+}
+
+.calc div.Tequal {
+    background-color: #f4e983;
+    color: #121411;
+}

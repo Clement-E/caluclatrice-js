@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swag Texas Instrument</title>
+    <link rel="stylesheet" href="./calc.css">
+    <script src="./calc.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div id="screen" class="screen"></div>
+            <div class="T7" onclick="sendNum('7')">7</div>
+            <div class="T8" onclick="sendNum('8')">8</div>
+            <div class="T9" onclick="sendNum('9')">9</div>
+            <div class="Tplus" onclick="sendNum('+')">+</div>
+            <div class="T6" onclick="sendNum('6')">6</div>
+            <div class="T5" onclick="sendNum('5')">5</div>
+            <div class="T4" onclick="sendNum('4')">4</div>
+            <div class="Tmoins" onclick="sendNum('-')">-</div>
+            <div class="T3" onclick="sendNum('3')">3</div>
+            <div class="T2" onclick="sendNum('2')">2</div>
+            <div class="T1" onclick="sendNum('1')">1</div>
+            <div class="Tmult" onclick="sendNum('*')">x</div>
+            <div class="T0" onclick="sendNum('0')">0</div>
+            <div class="Tdot" onclick="sendNum('.')">.</div>
+            <div  class="Tequal" onclick="equalTo()">=</div>
+            <div class="Tdiv" onclick="sendNum('/')">/</div>
+            <div class="Terase">Eff</div>
+            <div class="Tclear" onclick="clearScr()">AC</div>
+            <div class="Tpercent" onclick="sendNum('*0.01')">%</div>
+
+        </div>
+    </div>
+</body>
+</html>
